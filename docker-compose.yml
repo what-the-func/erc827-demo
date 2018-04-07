@@ -1,0 +1,20 @@
+version: '2'
+services:
+
+  truffle:
+    stdin_open: true
+    tty: true
+    build: docker/truffle
+    ports:
+      - "9999"
+    volumes:
+      - "./src:/app"
+
+  node:
+    stdin_open: true
+    tty: true
+    build: docker/node
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./src:/app"
