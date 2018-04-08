@@ -1,4 +1,4 @@
-** ERC827 Demo **
+## ERC827 Demo
 
 This requires truffle to be installed
 
